@@ -1,13 +1,30 @@
-/* Add application styles & imports to this file! */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-html,
-body {
-  height: 100%;
+
+p {
+  font-family: Lato;
 }
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+mat-button-toggle-group {
+  box-shadow: none;
 }
+
+mat-button-toggle {
+  z-index: 3 !important;
+  width: 15vh;
+}
+
+mat-button-toggle:hover {
+  background-color: #fff !important;
+  border-radius: 5px !important;
+}
+
+.mat-button-toggle-checked {
+  background-color: #ccc !important;
+}
+
+.mat-button-toggle-input {
+  background-color: none !important;
+}
+
 form {
   width: 420px;
   margin: 35px auto 100px;
