@@ -32,7 +32,6 @@ export class AppComponent {
   onSubmit(): void {
     this.submitted = true;
 
-
     if (this.inviteeForm.valid) {
       console.log(this.inviteeForm.value);
       this.inviteeForm.reset();
@@ -56,7 +55,7 @@ export class AppComponent {
 
   buildRefuseForm() {
     this.inviteeForm = this.formBuilder.group({
-      name: '',
+      name: ['', Validators.required],
       phone: '',
       email: '',
       gender: '',
